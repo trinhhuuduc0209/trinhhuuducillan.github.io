@@ -1,0 +1,67 @@
+
+.product-img {
+	position: relative;
+	overflow: hidden;
+}
+.product-action {
+	display: inline-block;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+.product-action a {
+	display: block;
+	background-color: #ebebeb;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 50px;
+	margin-bottom: 5px;
+	color: #444444;
+	font-size: 18px;
+	opacity: 0;
+	left: 30px;
+	visibility: hidden;
+	position: relative;
+}
+.product-action a i {
+	line-height: 41px;
+}
+.product-action a:last-child {
+	margin-bottom: 0px;
+}
+
+.product-action a:nth-child(1) {
+	transition-delay: 0.1s;
+}
+.product-action a:nth-child(2) {
+	transition-delay: 0.2s;
+}
+.product-action a:nth-child(3) {
+	transition-delay: 0.3s;
+}
+.product-wrapper:hover .product-action a {
+	left: 0;
+	opacity: 1;
+	visibility: visible;
+}
+.product-action a:hover,
+.product-cart>a:hover,
+.deal-product-action a:hover {
+	background-color: red;
+	color: #fff;
+}
+.product-img img,
+.blog-img img,
+.deal-product-img img,
+.recommended-product-img img {
+	transition: all 1.5s ease 0s;
+	width: 100%;
+}
+.product-wrapper:hover .product-img img,
+.blog-wrapper:hover .blog-img img,
+.deal-product-wrappers:hover .deal-product-img img,
+.single-recommended-product-wrapper:hover .recommended-product-img img {
+	transform: scale(1.2);
+}
